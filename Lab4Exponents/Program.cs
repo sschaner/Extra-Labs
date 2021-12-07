@@ -18,6 +18,24 @@ namespace Lab4Exponents
             string column2Title = "Squared";
             string column3Title = "Cubed";
             bool enterAgain = true;
+            string column1TitleDecoration = "";
+            string column2TitleDecoration = "";
+            string column3TitleDecoration = "";
+
+            for (int i = 0; i < column1Title.Length; i++)
+            {
+                column1TitleDecoration += "=";
+            }
+
+            for (int i = 0; i < column2Title.Length; i++)
+            {
+                column2TitleDecoration += "=";
+            }
+
+            for (int i = 0; i < column3Title.Length; i++)
+            {
+                column3TitleDecoration += "=";
+            }
 
             Console.WriteLine("Learn your squares and cubes!\n");
 
@@ -28,7 +46,7 @@ namespace Lab4Exponents
                 int userInteger = int.Parse(userInput);
 
                 Console.WriteLine("{0,-10}{1,-10}{2,-10}", column1Title, column2Title, column3Title);
-                Console.WriteLine("{0,-10}{1,-10}{2,-10}", "======", "=======", "=====");
+                Console.WriteLine("{0,-10}{1,-10}{2,-10}", column1TitleDecoration, column2TitleDecoration, column3TitleDecoration);
                 for (int i = 1; i <= userInteger; i++)
                 {
                     int number = i;
