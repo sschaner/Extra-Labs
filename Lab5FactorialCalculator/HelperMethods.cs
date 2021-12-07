@@ -45,7 +45,8 @@ namespace Lab5FactorialCalculator
         }
 
         // Returns a value to determine if the user would like to continue
-        public string ContinueAgain(string userInput)
+        public
+            string ContinueAgain(string userInput)
         {
             if (userInput.ToLower().Trim() == "y")
             {

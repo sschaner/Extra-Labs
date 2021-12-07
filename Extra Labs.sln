@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab4Exponents", "Lab4Expone
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5FactorialCalculator", "Lab5FactorialCalculator\Lab5FactorialCalculator.csproj", "{842217DF-268B-4951-A9BC-EAFC0D4376F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5FactorialCalculator.Tests", "Lab5FactorialCalculator.Tests\Lab5FactorialCalculator.Tests.csproj", "{9D6215FA-E59E-4517-818E-A5EC8ABAF343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5FactorialCalculator.Tests", "Lab5FactorialCalculator.Tests\Lab5FactorialCalculator.Tests.csproj", "{9D6215FA-E59E-4517-818E-A5EC8ABAF343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6CasinoDiceRoller", "Lab6CasinoDiceRoller\Lab6CasinoDiceRoller.csproj", "{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9D6215FA-E59E-4517-818E-A5EC8ABAF343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D6215FA-E59E-4517-818E-A5EC8ABAF343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D6215FA-E59E-4517-818E-A5EC8ABAF343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
