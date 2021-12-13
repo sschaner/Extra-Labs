@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5FactorialCalculator", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5FactorialCalculator.Tests", "Lab5FactorialCalculator.Tests\Lab5FactorialCalculator.Tests.csproj", "{9D6215FA-E59E-4517-818E-A5EC8ABAF343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6CasinoDiceRoller", "Lab6CasinoDiceRoller\Lab6CasinoDiceRoller.csproj", "{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab6CasinoDiceRoller", "Lab6CasinoDiceRoller\Lab6CasinoDiceRoller.csproj", "{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab13RockPaperScissors", "Lab13RockPaperScissors\Lab13RockPaperScissors.csproj", "{4D9C7402-78F6-44E2-9826-9A5F7BE276DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1063A272-58CE-45AF-BFB1-F0D8E464A8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9C7402-78F6-44E2-9826-9A5F7BE276DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9C7402-78F6-44E2-9826-9A5F7BE276DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9C7402-78F6-44E2-9826-9A5F7BE276DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9C7402-78F6-44E2-9826-9A5F7BE276DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
