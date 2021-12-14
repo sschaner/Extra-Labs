@@ -8,7 +8,22 @@ namespace Lab13RockPaperScissors
         {
             Title();
             Welcome();
-            string name = GetusersName();
+
+            RockPlayer rockPlayer = new RockPlayer();
+            rockPlayer.Name = "The Jets";
+            RandomPlayer randomPlayer = new RandomPlayer();
+            randomPlayer.Name = "The Sharks";
+            HumanPlayer player1 = RPSApp.CreateHumanPlayer();
+            player1.Name = HumanPlayer.GetusersName();
+            
+
+            Player opponent = RPSApp.ChooseOpponent(rockPlayer, randomPlayer);
+
+            RPS playersRPSChoice = RPSApp.GetPlayersChoiceOfRockPaperScissors();
+
+
+
+            
 
             Exit();
         }
@@ -23,18 +38,11 @@ namespace Lab13RockPaperScissors
             Console.WriteLine("Welcome to Rock Paper Scissors!");
         }
 
-        public static string GetusersName()
-        {
-            string name = "";
-            Console.Write("Enter your name: ");
-            return name = Console.ReadLine().Trim();
-        }
-
         public static void Exit()
         {
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
-        
+
     }
 }

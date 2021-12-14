@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Lab13RockPaperScissors
 {
-    enum RPS
+    public enum RPS
     {
         rock = 1,
         paper,
-        scissors
+        scissors,
+        invalid
     }
 }
