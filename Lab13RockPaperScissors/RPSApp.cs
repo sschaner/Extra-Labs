@@ -64,5 +64,29 @@ namespace Lab13RockPaperScissors
             } while (validInput == false);
         }
 
+        public static void GameSummary(HumanPlayer player1, RockPlayer rockPlayer, RandomPlayer randomPlayer)
+        {
+            Player opponent = RPSApp.ChooseOpponent(rockPlayer, randomPlayer);
+
+            RPS playersRPSChoice = RPSApp.GetPlayersChoiceOfRockPaperScissors();
+            RPS oppenentsChoice = opponent.GenerateRPS();
+
+            Console.WriteLine($"{player1.Name}: {playersRPSChoice}");
+            Console.WriteLine($"{opponent.Name}: {oppenentsChoice}");
+
+            if ((playersRPSChoice == RPS.rock && oppenentsChoice == RPS.rock) || (playersRPSChoice == RPS.paper && oppenentsChoice == RPS.paper) || (playersRPSChoice == RPS.scissors && oppenentsChoice == RPS.scissors))
+            {
+                Console.WriteLine("Draw!");
+            }
+            else if ((playersRPSChoice == RPS.paper && oppenentsChoice == RPS.rock) || (playersRPSChoice == RPS.rock && oppenentsChoice == RPS.scissors) || (playersRPSChoice == RPS.scissors && oppenentsChoice == RPS.paper))
+            {
+                Console.WriteLine($"{player1.Name} wins!");
+            }
+            else
+            {
+                Console.WriteLine($"{opponent.Name} win!");
+            }
+        }
+
     }
 }

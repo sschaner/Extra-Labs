@@ -15,15 +15,8 @@ namespace Lab13RockPaperScissors
             randomPlayer.Name = "The Sharks";
             HumanPlayer player1 = RPSApp.CreateHumanPlayer();
             player1.Name = HumanPlayer.GetusersName();
-            
 
-            Player opponent = RPSApp.ChooseOpponent(rockPlayer, randomPlayer);
-
-            RPS playersRPSChoice = RPSApp.GetPlayersChoiceOfRockPaperScissors();
-
-
-
-            
+            RPSApp.GameSummary(player1, rockPlayer, randomPlayer);
 
             Exit();
         }
