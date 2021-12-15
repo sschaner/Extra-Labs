@@ -16,13 +16,6 @@ namespace Lab13RockPaperScissors
             Console.WriteLine();
         }
 
-        public static HumanPlayer CreateHumanPlayer()
-        {
-            HumanPlayer humanPlayer = new HumanPlayer();
-            
-            return humanPlayer;
-        }
-
         public static Player ChooseOpponent(RockPlayer rockPlayer, RandomPlayer randomPlayer)
         {
             bool oppenentIsValid = false;
@@ -83,7 +76,7 @@ namespace Lab13RockPaperScissors
             randomPlayer.Name = "The Sharks";
             randomPlayer.NumberOfWins = 0;
 
-            HumanPlayer player1 = CreateHumanPlayer();
+            HumanPlayer player1 = new HumanPlayer();
             player1.Name = HumanPlayer.GetusersName();
             player1.NumberOfWins = 0;
             Console.WriteLine();
@@ -110,20 +103,8 @@ namespace Lab13RockPaperScissors
 
                 Console.Write("Play again? (y/n): ");
                 string userInput = Console.ReadLine();
+                playAgain = HelperMethods.YesOrNo(userInput);
                 Console.Clear();
-
-                switch (userInput.ToLower().Trim())
-                {
-                    case "y":
-                        playAgain = true;
-                        break;
-                    case "n":
-                        playAgain = false;
-                        break;
-                    default:
-                        HelperMethods.ErrorMessage("Please enter either 'y' or 'n'.");
-                        break;
-                }
 
             } while (playAgain == true);
 
@@ -132,7 +113,7 @@ namespace Lab13RockPaperScissors
 
         public static void Exit()
         {
-            Console.WriteLine("Thank you for playing. Goodbye!");
+            Console.WriteLine("Thanks for playing. Goodbye!");
             Console.ReadKey();
         }
 

@@ -12,5 +12,23 @@ namespace Lab13RockPaperScissors
             Console.WriteLine($"{customErrorMessage}");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
+
+        public static bool YesOrNo(string userInput)
+        {
+            bool playAgain = false;
+            switch (userInput.ToLower().Trim())
+            {
+                case "y":
+                    playAgain = true;
+                    break;
+                case "n":
+                    playAgain = false;
+                    break;
+                default:
+                    HelperMethods.ErrorMessage("Please enter either 'y' or 'n'.");
+                    break;
+            }
+            return playAgain;
+        }
     }
 }
