@@ -13,6 +13,13 @@ namespace Lab13RockPaperScissors
             set { name = value; }
         }
 
+        private int numberOfWins;
+        public int NumberOfWins
+        {
+            get { return numberOfWins; }
+            set { numberOfWins = value; }
+        }
+
         public abstract RPS GenerateRPS();
     }
 }

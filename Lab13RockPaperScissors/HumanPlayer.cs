@@ -16,7 +16,8 @@ namespace Lab13RockPaperScissors
         // Returns the users choice of rock, paper, or scissors
         public override RPS GenerateRPS()
         {
-            bool validResponse = false;
+            RPS playersChoice = RPS.invalid;
+            bool validInput = false;
             do
             {
                 Console.Write("Rock, paper, or scissors? (R/P/S): ");
@@ -24,21 +25,24 @@ namespace Lab13RockPaperScissors
                 switch (userInput.ToLower().Trim())
                 {
                     case "r":
-                        validResponse = true;
-                        return RPS.rock;
-                    case "p":
-                        validResponse = true;
-                        return RPS.paper;
-                    case "s":
-                        validResponse = true;
-                        return RPS.scissors;
-                    default:
-                        validResponse = false;
-                        Console.WriteLine("Please enter either 'R', 'P', or 'S'.");
+                        validInput = true;
+                        playersChoice = RPS.rock;
                         break;
+                    case "p":
+                        validInput = true;
+                        playersChoice = RPS.paper;
+                        break;
+                    case "s":
+                        validInput = true;
+                        playersChoice = RPS.scissors;
+                        break;
+                    default:
+                        validInput = false;
+                        HelperMethods.ErrorMessage("Please enter either 'R', 'P', or 'S'.");
+                        continue;
                 }
-            } while (validResponse == false);
-            return RPS.rock;
+            } while (validInput == false);
+            return playersChoice;
         }
 
     }
